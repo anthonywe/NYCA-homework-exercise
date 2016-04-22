@@ -1,0 +1,31 @@
+<html>
+
+<body>
+<script type="text/javascript">
+
+var book = {
+	title:"pool lessons",
+	body: [ "curacao", "aruba", "bonaire"]
+}
+
+var buki = {
+	title: "weather lessons",
+	body: ["cold", "warm", "wet"]
+}
+
+function readthebook (read) {
+	console.log ("title: " + read.title)
+		for ( var i = 0; i < read.body.length; i++) {
+			console.log("page" + [i+1] + ": " + read.body[i])
+		}
+}
+readthebook(book);
+readthebook(buki);
+</script>
+
+
+</body>
+
+
+
+</html>
