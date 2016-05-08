@@ -25,30 +25,6 @@ function readjason ( filename, calback) {
 
 module.exports.water = readjason
 
-/*
 
-var countryname = process.argv[2] // the jason file is case sensitive!
-var fs = require ('fs')
-
-// Function that reads and loops json country file
-
-fs.readfile("./countries.json", function (error, filedata ) {
-	if ( error ) {
-		console.log ("something is up! Details: " + error)
-		throw error
-	}
-	// store our file data in var as json
-	var jsondata = JSON.parse(fiedata)
-
-	// loop through the json to match country to parameter
-	jsondata.forEach ( function(country)) {
-		if ( country.name == countryname) {
-			console.log("Country: " + country.name)
-			console.log("Top Level Domain: " + country.topLevelDomain)
-		}
-	})
-})
-
-*/
 
 
