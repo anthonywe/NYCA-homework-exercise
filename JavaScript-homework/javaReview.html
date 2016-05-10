@@ -1,0 +1,210 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+
+
+</head>
+
+<body>
+
+
+
+
+</body>
+
+
+
+
+
+<script type="text/javascript">
+
+//write a function that takes in three parameters and returns the sum of those three parameters
+
+function giveSum (a ,b ,c) {
+	return a + b + c;
+}
+
+console.log(giveSum(3,5,8));
+
+// given a string, create a function that returns the last character in that string.
+// examples:
+// "cattywampus" --> s
+
+function theString (helloString) {
+	var letter
+	for (i=0; i<helloString.length; i++);{
+		letter = i;
+	}	return helloString.charAt(letter - 1);
+};
+
+console.log(theString("Curacao"));
+console.log(theString("Aruba"));
+console.log(theString("Anthony"));
+
+
+var myString = "linto.yahoo.com.";
+var stringLength = myString.length; // this will be 16
+var lastChar = myString.charAt(stringLength - 1); // this will be the string "."
+
+console.log(lastChar)
+
+// write a function that takes in one parameter and returns the cube of that parameter
+// examples:
+// 3 --> 27
+// 4 --> 64
+
+function giveCube (a) {
+	return Math.pow(a , 3);
+}
+
+console.log(giveCube(3));
+console.log(giveCube(4));
+console.log(giveCube(5));
+
+
+
+function backToFront(reverseMe) {
+	var reversedWords = '';
+	for (var i = reverseMe.length - 1; i >= 0; i--)
+		reversedWords += reverseMe[i];
+	return reversedWords;
+};
+
+console.log(backToFront("hello"));
+console.log(backToFront("example"));
+
+arryOne = ["a", "b", "c"];
+arryTwo = ["Curacao", "Aruba", "Bonaire"];
+
+function twoArrys (arry1, arry2) {
+	var newObj = {
+
+	};
+	for (var i = 0; i < arryOne.length; i++) {
+		newObj[arry1[i]] = arry2[i];
+		
+	};
+	return newObj;
+};
+console.log(twoArrys(arryOne, arryTwo));
+
+var objecto = {
+	exciting: "markets",
+	exotic: "britain"
+};
+function myObject () {
+	var newObject = {
+		keys: [],
+		values: []
+	};
+	for (var key in objecto) {
+		newObject.keys.push(key)
+		newObject.values.push(objecto[key])
+}
+return newObject;
+
+}
+
+console.log(myObject());
+// function porfin (o) {
+// 	for(var key in obj) {
+// 		var val = obj[key];
+// 		console.log("Key: "+key+" value: "+val);
+// 	}
+	
+// }
+
+
+// var jabi = ["color", "weight", "size"];
+// var balor = ["red", 100, "large"];
+// var obj = [];
+// function objToArr ( key, value ) {
+// 	for (var i = 0; i < jabi.length; i++) {
+// 		obj[key[i]] = value[i];
+		
+// 	}
+// 	porfin ()
+// }
+
+
+
+
+// console.log(objToArr(jabi, balor));
+// console.log(obj);
+
+
+
+
+// var jabi = ["color", "weight", "size"];
+// var balor = ["red", 100, "large"];
+// function objToArr ( key, value ) {
+//     var obj = [];
+//     for (var i = 0; i < jabi.length; i++) {
+//         obj[key[i]] = value[i];
+//     }
+//     return "keys: [" + key + "]" + " values: [" + value + "]"
+
+// };
+
+// console.log(objToArr(jabi, balor));
+/*
+function listAllProperties(o) {
+	var objectToInspect;     
+	var result = [];
+	
+	for(objectToInspect = o; objectToInspect !== null; objectToInspect = Object.getPrototypeOf(objectToInspect)){  
+      result = result.concat(Object.getOwnPropertyNames(objectToInspect));  
+	}
+	
+	return result; 
+}
+
+
+function listAllProperties(o) {    
+	var result = [];
+	
+	for(objectToInspect = o; objectToInspect !== null; objectToInspect = Object.getPrototypeOf(objectToInspect)){  
+      result = result.concat(Object.getOwnPropertyNames(objectToInspect));  
+	}
+	
+	return result; 
+}
+
+
+
+
+
+var jabi = ["color", "weight", "size"];
+var balor = ["red", 100, "large"];
+function objToArr ( key, value ) {
+	var obj = [];
+	for (var i = 0; i < jabi.length; i++) {
+		obj[key[i]] = value[i];
+	}
+	return obj;
+	function listAllProperties(o) {    
+		var result = [];
+
+		for(obj = o; obj !== null; obj = Object.getPrototypeOf(obj)){  
+			result = result.concat(Object.getOwnPropertyNames(obj));  
+		}
+
+		return result; 
+	}
+
+};
+console.log(objToArr(jabi, balor));
+
+*/
+</script>
+
+
+
+
+
+
+
+</html>
+
